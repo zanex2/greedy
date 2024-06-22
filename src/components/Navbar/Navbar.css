@@ -1,0 +1,53 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333333ab;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+  transition: transform 0.3s ease; /* Smooth transition for animation */
+  transform: translateY(-100%); /* Initially hide the navbar above the viewport */
+}
+
+.navbar.visible {
+  transform: translateY(0); /* Move the navbar back to its original position */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-family: 'ClashDisplay-Regular', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-buttons {
+  display: flex;
+}
+
+.navbar-button {
+  border-radius: 5px;
+  font-family: 'ClashDisplay-Regular', sans-serif;
+  background-color: #444;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: #555;
+}

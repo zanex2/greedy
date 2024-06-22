@@ -1,0 +1,23 @@
+@import url('clash-display.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'ClashDisplay-Regular', sans-serif;
+  background-image: url('/src/assets/wall.jpg'); /* Set background image */
+  background-size: auto;
+  background-position: center; /* Center the background image */
+  background-attachment: fixed; /* Keep the background fixed while scrolling */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes up the full viewport height */
+}
+
+span {
+  display:inline-block;
+  font-size:5rem;
+}
+#root {
+  flex-grow: 1; /* Allow the root element to grow to fill remaining space */
+}
+
